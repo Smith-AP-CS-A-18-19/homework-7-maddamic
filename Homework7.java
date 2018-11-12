@@ -25,11 +25,11 @@ public class Homework7 {
 		int b = s.length() - t.length();
 		while ((b > i)) {
 			// System.out.println(i);
-			i++;
 			a = s.substring(i, i + t.length());
 			if (a.equals(t)) {
 				return i;
 			}
+			i++;
 		}
 		return -1;
 		// if (i > b) {
@@ -57,6 +57,9 @@ public class Homework7 {
 	 * return the integer portion of a divided by
 	 * b (i.e., calculate a / b using a loop)
 	 */
+	 /* You can't use division! You need to do a loop and
+ 	 * repeatedly subtract
+ 	 */
 	public static int problem4(int a, int b) {
 		int quotient = 9999;
 		while (quotient > a) {
@@ -68,6 +71,9 @@ public class Homework7 {
 	/* Use a loop (while or for) to calculate and
 	 * return the remainder of a divided by b
 	 * (i.e., calculate a % b using a loop)
+	 */
+	/* You can't use mod! You need to do a loop and
+	 * repeatedly subtract
 	 */
 	 public static int problem5(int a, int b) {
 		 int remainder = 999;
