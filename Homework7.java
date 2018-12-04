@@ -61,12 +61,20 @@ public class Homework7 {
  	 * repeatedly subtract
  	 */
 	public static int problem4(int a, int b) {
-		int quotient = 9999;
-		while (quotient > a) {
-			quotient = (a / b);
+		int num = 0;
+		while (a >= b) {
+			a -= b;
+			num++;
 		}
-		return quotient;
+		return num;
 	}
+
+	// 	int quotient = 9999;
+	// 	while (quotient > a) {
+	// 		quotient = (a / b);
+	// 	}
+	// 	return quotient;
+	// }
 
 	/* Use a loop (while or for) to calculate and
 	 * return the remainder of a divided by b
@@ -76,11 +84,14 @@ public class Homework7 {
 	 * repeatedly subtract
 	 */
 	 public static int problem5(int a, int b) {
-		 int remainder = 999;
-		 while (a < remainder) {
-		 	 remainder = a % b;
+		 while (a >= b) {
+		 	a -= b;
 		 }
-		 return remainder;
+		 return a;		 // int remainder = 999;
+		 // while (a < remainder) {
+		 // 	 remainder = a % b;
+		 // }
+		 // return remainder;
 	 }
 
 	 public static void main(String[] args) {
